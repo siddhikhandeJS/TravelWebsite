@@ -1,0 +1,282 @@
+/* body tag */
+body{
+	background-color: lavender;
+/*overflow-X: hidden;*/
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+overflow: hidden;
+}
+
+/* html */
+html {
+  scroll-behavior: smooth;
+}
+
+/*navigation bar*/
+.nav{
+	background: transparent;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	z-index: 2;
+}
+.nav a{
+	float: right;
+	color: darkgoldenrod;
+	text-align: center;
+	padding: 14px 17px;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.nav a:hover{
+	background-color: black;
+	color: red;
+}
+.nav a.active{
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+}
+/*
+/*video
+.video{
+	width: 100%;
+	height: 92vh;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+.container1{
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+}
+.login{
+	height: 100px;
+	width: 340px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+	color: #fff;
+	font-weight: bold;
+	padding-top: 60px;
+}
+.login h3{
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+.container1 .login-form input{
+	width: 200px;
+	margin-top: 20px;
+	background: transparent;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	border-radius: 30px;
+	box-shadow: 0 0 4px #fff;
+	transform: box-shadow 0.5s ease;
+}
+.btn{
+	color: white;
+	text-align: center;
+	padding: 5px 20px;
+	margin-top: 30px;
+	background: transparent;
+	border-radius: 30px;
+	box-shadow: 0 0 4px #fff;
+	cursor: pointer;
+}
+.container1 .login-form input[placeholder]:focus{
+	color: #fff;
+}
+.container1 .login-form input:focus, .container .login btn:hover{
+	box-shadow: 0 0 10px #fff;
+}
+
+.video h1{
+	text-align: center;
+	color: whitesmoke;
+	font-size: 3rem;
+	font-family: Cookie;
+	padding: 20px;
+	margin: 15px;
+	z-index: 1;
+	margin-top: 200px;
+	margin-left: 150px;
+	}
+.video-container{
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    filter: brightness(40%);
+
+}
+.videoplay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.5;
+}
+.video p{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: Cookie;
+	z-index: 1;
+	margin-left: -470px;
+	margin-top: 350px;
+}
+*/
+
+/* about us */
+.aboutus{
+	height: 400px;
+	background-color: gainsboro;
+	text-align: center;
+	font-size:23px;
+	color: red;
+}
+.aboutus h2{
+	text-align: center;
+	font-size:25px;
+	color: brown;
+}
+.aboutus p{
+	text-align: center;
+	color: black;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+/* about */
+.about {
+	background-color: gainsboro;
+	text-align: center;
+	font-size:25px;
+	color: red;
+}
+
+.header h2{
+	color: black;
+	font-size: 30px;
+}
+
+/* slider 
+slider{
+	display: block;
+	width: 100%;
+	height: 68%;
+	background-color: black;
+	overflow: flex;
+	position: absolute;
+}
+slider:before{
+	z-index: 800;
+	content: '';
+	position: absolute;
+	background: rgba(10, 10, 10, 0.3);
+	width: 100%;
+	height: 150%;
+	top: 0;
+	left: 0;
+}
+slider > *{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 150%;
+	background: black;
+	animation: slide 12s infinite;
+	overflow: hidden;
+}
+slide: nth-child(1){
+	left: 0;
+	animation-delay: -1s;
+	background-image: url(tadoba.PNG);
+	background-size: cover;
+	background-position: center;
+}
+slide: nth-child(2){
+	animation-delay: 2s;
+	background-image: url(tadoba.PNG);
+	background-size: cover;
+	background-position: center;
+}
+slide: nth-child(3){
+	left: 0;
+	animation-delay: 4s;
+	background-image: url(tadoba.PNG);
+	background-size: cover;
+	background-position: center;
+}
+slide: nth-child(4){
+	left: 0;
+	animation-delay: 6s;
+	background-image: url(tadoba.PNG);
+	background-size: cover;
+	background-position: center;
+}
+
+slide p{
+	display: none;
+}
+@keyframes slide{
+	0%{left: 100%; width: 100%;}
+	5%{left: 0%;}
+	25%{left: 0%;}
+	30%{left: -100%; width: 100%;}
+	30.001%{left: -100%; width: 0%;}
+	100%{left: 100%; width: 0%;}
+}
+*/
+/*slider*/
+#slider{
+	position:relative;
+	height:auto;
+	width:100%;
+}
+/*.slider img{
+	height:20rem;
+	width:100%
+}*/
+
+
+
+/* slider *//*
+#slider{
+	overflow: hidden;
+}
+#slider figure{
+	position: relative;
+	width: 100%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img{
+	width: 100%;
+	height: 90vh;
+	float: left;
+}
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+}
+*/

@@ -1,0 +1,765 @@
+/* body tag */
+body{
+	background-color: lavender;/*rgba(0,0,0,0.7)*/;
+overflow-X: hidden;
+margin-top: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+/* html */
+html {
+  scroll-behavior: smooth;
+}
+
+/*navigation bar*/
+.nav{
+	background: black;
+	overflow: hidden;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+}
+.nav a{
+	float: right;
+	color: darkgoldenrod;
+	text-align: center;
+	padding: 14px 11px;
+	text-decoration: none;
+	font-size: 19px;
+	font-weight: bold;
+	border-radius: 10px;
+}
+.nav a:hover{
+	background-color: black;
+	color: red;
+}
+.nav a.active{
+	/*background-color: white;*/
+	color: darkgoldenrod;
+	border-radius: 10px;
+}
+
+/*video*/
+.video{
+	width: 100%;
+	height: 92vh;
+	display: flex;
+	overflow: hidden;
+	position: relative;
+}
+
+/*login form*/
+.container1{
+	height: 350px;
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+.login{
+	height: 100px;
+	width: 440px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	font-weight: bold;
+	padding-top: 60px;
+}
+.login h3{
+	font-weight: bold;
+	font-size: 30px;
+	letter-spacing: 3px;
+}
+.container1 .login-form input{
+	color: white;
+	width: 200px;
+	margin-top: 20px;
+	background: transparent;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	border-radius: 30px;
+	box-shadow: 0 0 4px #fff;
+	transform: box-shadow 0.5s ease;
+}
+.btn{
+	color: white;
+	text-align: center;
+	padding: 5px 20px;
+	margin-top: 30px;
+	background: transparent;
+	border-radius: 30px;
+	box-shadow: 0 0 4px #fff;
+	cursor: pointer;
+}
+.container1 .login-form input[placeholder]:focus{
+	color: #fff;
+}
+.container1 .login-form input:focus, .container .login btn:hover{
+	box-shadow: 0 0 10px #fff;
+}
+
+/*registration form*/
+
+
+.video h1{
+	text-align: center;
+	color: whitesmoke;
+	font-size: 3rem;
+	font-family: Cookie;
+	padding: 20px;
+	margin: 15px;
+	z-index: 1;
+	margin-top: 200px;
+	margin-left: 150px;
+	}
+.video-container{
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    filter: brightness(40%);
+
+}
+.videoplay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.5;
+}
+.video p{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	font-family: Cookie;
+	z-index: 1;
+	margin-left: -470px;
+	margin-top: 350px;
+}
+
+
+
+/* about */
+.about {
+	margin-top: -40px;
+	text-align: center;
+	font-size:25px;
+	color: red;
+}
+
+.header h2{
+	margin-top: -20px;
+	color: black;
+	font-size: 30px;
+}
+
+/* services */
+.header6 h1{
+	color: black;
+	text-align: center;
+}
+.header6 h2{
+	color: black;
+	text-align: center;
+}
+.services2{
+	width: 900px;
+	height: 380px;
+	display: flex;
+}
+.box3{
+	background-color: gainsboro;
+	padding: 20px;
+	margin: 15px;
+	width: 1500px;
+	height: 250px;
+	box-shadow: -1px 0 10px black;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: 97px;
+	border-radius: 10%;
+}
+.services2 img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+}
+.services2 button{
+	text-align: center;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+/* slider */
+.container{
+	height:250px;
+	margin: auto;
+	position: relative;
+	width:100%;
+	display: inline-block;
+	overflow: hidden;
+}
+.slide-container{
+	display: flex;
+	width: calc(250px * 18);
+	animation: scroll 20s linear infinite;
+
+}
+@keyframes scroll{
+0%{
+	transform: translateX(0);
+}
+100%{
+	transform: translateX(calc(-250px * 12));
+}
+}
+.slideimage{
+	height: 250px;
+	width: 250px;
+	display:flex;
+	align-items:center;
+	padding: 15px;
+	perspective:100px;
+}
+.slide-container img{
+	width: 100%;
+	transition: transform 1s;
+}
+.slide-container img:hover{
+	transform: translateZ(20px);
+}
+
+
+/* handpicked collection */
+.destination{
+	border: 3px solid black;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.destination h2{
+	text-align: left;
+	font-size:30px;
+	margin-left: 40px;
+	color: black;
+}
+.box{
+	width: 1505px;
+	height: 230px;
+	margin-top: 10px;
+	display: flex;
+}
+.cover{
+	margin: 10px;
+	width: 192px;
+	height: 200px;
+	box-shadow: -1px 0 10px black;
+}
+.cover img{
+	width:200px;
+	height: 200px;
+}
+.text{
+	text-align: center;
+	margin-top: -7vh;
+	font-size:20px;
+	color: ivory;
+	font-weight: bold;
+}
+
+
+/* header2 */
+.header2 h1{
+	color: black;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+.header2 p{
+	text-align: left;
+	color: black;
+	font-size: 18px;
+	margin-left: 100px;
+	margin-right: 150px;
+}
+
+/* TOURS */
+.tours{
+	margin-left: 20px;
+	width: 900px;
+	height: 400px;
+	display: flex;
+}
+.box1{
+	background-color: black;
+	padding: 20px;
+	margin: 15px;
+	width: 800px;
+	height: 350px;
+	box-shadow: -1px 0 10px black;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.tours h2{
+	text-align: left;
+	font-size:20px;
+	color: white;
+	margin-top: 6px;
+}
+.tours p{
+	text-align: left;
+	margin-top: -8px;
+	color: white;
+}
+.tours img{
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+.tours h3{
+	text-align: left;
+	margin-top: -12px;
+	color: grey;
+	font-size: 13px;
+}
+.tours button{
+	padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 160px
+}
+ /* tours2 */
+.tours2{
+	margin-left: 20px;
+	width: 900px;
+	height: 400px;
+	display: flex;
+}
+.tours2 h2{
+	text-align: left;
+	font-size:20px;
+	color: white;
+	margin-top: 6px;
+}
+.tours2 p{
+	text-align: left;
+	margin-top: -8px;
+	color: white;
+}
+.tours2 img{
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+.tours2 h3{
+	text-align: left;
+	margin-top: -12px;
+	color: grey;
+	font-size: 13px;
+}
+.tours2 button{
+	padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 160px
+}
+
+
+/* header3 */
+.header3{
+	color: black;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+/* tours3 */
+.tours3{
+	margin-left: 20px;
+	width: 900px;
+	height: 400px;
+	display: flex;
+}
+.tours3 h2{
+	text-align: left;
+	font-size:20px;
+	color: white;
+	margin-top: 6px;
+}
+.tours3 p{
+	text-align: left;
+	margin-top: -8px;
+	color: white;
+}
+.tours3 img{
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+.tours3 h3{
+	text-align: left;
+	margin-top: -12px;
+	color: grey;
+	font-size: 13px;
+}
+.tours3 button{
+	padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 160px
+}
+
+
+/* header4 */
+.header4{
+	color: black;
+	font-size: 30px;
+	margin-left: 50px;
+	margin-top: 40px;
+}
+/* tours4 */
+.tours4{
+	margin-left: 20px;
+	width: 900px;
+	height: 400px;
+	display: flex;
+}
+.tours4 h2{
+	text-align: left;
+	font-size:20px;
+	color: white;
+	margin-top: 6px;
+}
+.tours4 p{
+	text-align: left;
+	margin-top: -8px;
+	color: white;
+}
+.tours4 img{
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+.tours4 h3{
+	text-align: left;
+	margin-top: -12px;
+	color: grey;
+	font-size: 13px;
+}
+.tours4 button{
+	padding: 8px 16px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    position: absolute;
+    margin-left: -200px;
+    margin-top: 160px
+}
+
+
+/* Services */
+.header5 h1{
+	color: royalblue;
+	text-align: center;
+	background-color: bisque;
+	margin-bottom: 0px;
+}
+.services{
+	width: 100%;
+	height: 380px;
+	display: flex;
+	background-color: bisque;
+}
+.box2{
+	background-color: white;
+	padding: 20px;
+	margin: 15px;
+	width: 300px;
+	height: 250px;
+	box-shadow: -1px 0 10px black;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 5%;
+}
+.services h2{
+	text-align: left;
+	font-size:20px;
+	color: black;
+	margin-top: 6px;
+}
+.services p{
+	text-align: left;
+	margin-top: -8px;
+	color: blue;
+}
+.services img{
+	width: 300px;
+	height: 200px;
+	border-radius: 5%;
+}
+.services h3{
+	text-align: left;
+	margin-top: -12px;
+	color: grey;
+	font-size: 13px;
+}
+.para p{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	margin-top: 100px;
+	color: rebeccapurple;
+}
+
+/* offers */
+.header7 h1{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: black;
+	background-color: bisque;
+}
+.hotels1 h2{
+	text-align: center;
+	color: steelblue;
+}
+.hotels1{
+	width: 100%;
+	display: flex;
+}
+.hotels1 p{	
+	margin-left: 20px;
+text-align: left;
+	color: rebeccapurple;
+}
+.hotels1 img{
+	margin-left: 90px;
+	width: 110px;
+	height: >
+110px;
+	border-radius: 5%;
+}
+.box4{
+	background-color: white;
+	margin: 5px;
+	border: 1px solid  black;
+	width: 350px;
+	box-shadow: gray;
+}
+
+
+/* about us */
+.aboutus{
+	height: 90vh
+	background-color: gainsboro;
+	/*text-align: center;*/
+	font-size:23px;
+	/*margin-top:-25px;*/
+	color: red;
+	/*display: flex;*/
+}
+.aboutus img{
+	margin-left: 50px;
+	border-radius: 0 40px 40px 0;
+}
+.aboutus h1{
+	text-align: center;
+}
+.aboutus h2{
+	text-align: center;
+	font-size:25px;
+	color: brown;
+}
+.aboutus p{
+	text-align: left;
+    color: black;
+    margin-left: 483px;
+    margin-right: 150px;
+    margin-top: -300px;
+}
+
+/* Gallery */
+.gallery{
+	margin-top: 130px;
+}
+table{
+	border-collapse:collapse;
+}
+td{
+	padding: 15px;
+}
+.gallery h1{
+	text-align: center;
+	color: blue;
+}
+
+
+/* HTML CONTACT US FORM */
+.contact{
+	position: relative;
+	min-height: 70vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(contact.jpg);
+	background-size: cover;
+
+}
+.contactform{
+	width: 30%;
+	padding: 40px;
+	border: 3px solid black;
+	background: #fff;
+}
+.contact h1{
+	font-size: 30px;
+	color: black;
+	font-weight: 500;
+}
+.contactform h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactform .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactform .inputBox input,
+.contactform .inputBox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid black;
+	outline: none;
+	resize: none;
+}
+.contactform .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactform .inputBox input:focus ~  span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="Submit"]
+{
+	width: 100px;
+	background: skyblue;
+	color: white;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+@media(max-width: 991px)
+{
+	.contact1{
+		padding: 50px;
+	}
+	.contactform{
+		width: 100%;
+	}
+}
+
+/*footer*/
+.footer{
+	margin-top: -20px;
+	height: 350px;
+	background-color: black;
+	padding: 28px;
+}
+.box8{
+	margin-left: 100px;
+	/*margin-top: 20px;*/
+}
+.about2{
+
+	width: 200px;
+}
+.about2 h2{
+	color: white;
+    width: 140px;
+}
+.about2 a{
+	color: turquoise;
+	display: flex;
+}
+.backtotop a {
+	margin-right: 50px;
+    color: white;
+    font-size: 15px;
+    float: right;
+}
+.box9{
+	margin-left: 350px;
+	margin-top: -200px;
+}
+.tips h2{
+	color: white;
+}
+.tips p{
+	color: turquoise;
+	text-align: left;
+}
+.box10{
+	margin-right: 100px;
+	float: right;
+	margin-top: -200px;
+	color: turquoise;
+}
+.follow h2{
+	color: white;
+	font-weight: bold;
+}
+.follow h3{
+	color: turquoise;
+}
+.footer hr{
+	margin-top: 100px;
+}
+.line p{
+	color: gray;
+	text-align: center;
+}
+

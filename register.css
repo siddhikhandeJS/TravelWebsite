@@ -1,0 +1,21 @@
+.container2{
+   position: relative;
+    min-height: 50vh;
+    padding: 50px 100px;
+    display: flex;
+ margin-top:  140px;
+ margin-left : 130px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width : 70%;
+    background-image: url(register.jpg);
+    background-size: cover;
+ overflow: hidden;
+}
+.title h1{
+    color : black;
+}
+.input-box{
+ margin-top: 20px;  
+}
